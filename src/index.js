@@ -11,14 +11,14 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Navigate to={`${tabs[0].id}`}/>}/>
+        <Route path='/cms-app' element={<Navigate to={`${tabs[0].id}`}/>}/>
           {tabs.map((item) => {
             const Lazy = lazy(() => import(`${item.path}`));
 
             return (
               <Route 
                 key={item.order} 
-                path={`/${item.id}`} 
+                path={`/cms-app/${item.id}`} 
                 element={
                   <Suspense fallback={<Loader/>}>
                     <Lazy/>

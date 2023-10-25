@@ -19,7 +19,7 @@ export default function Wrapper ({children}) {
                         <div
                             key={item.path}
                             className={`tab ${pathname.slice(1) === item.id ? 'selected' : ''}`} 
-                            onClick={() => handleClick(`/${item.id}`)}
+                            onClick={() => handleClick(`/cms-app/${item.id}`)}
                         >
                             {item.title}
                         </div>                
