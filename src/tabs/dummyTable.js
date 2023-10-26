@@ -1,11 +1,8 @@
-import Wrapper from "components/Wrapper";
-import React from "react";
+import React from 'react';
 
 
 const DummyTable = () => (
-    <Wrapper>
-      <div>Dummy Table</div>
-    </Wrapper>
+	<div>Dummy Table</div>
 );
 
 export default DummyTable;
